@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'test.ui'
+# Form implementation generated from reading ui file 'foody.ui'
 #
 # Created by: PyQt5 UI code generator 5.8.2
 #
@@ -12,17 +12,18 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(400, 300)
-        self.label = QtWidgets.QLabel(Form)
-        self.label.setGeometry(QtCore.QRect(0, 100, 54, 17))
-        self.label.setObjectName("label")
-        self.comboBox = QtWidgets.QComboBox(Form)
-        self.comboBox.setGeometry(QtCore.QRect(190, 20, 72, 25))
-        self.comboBox.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
-        self.comboBox.setEditable(False)
-        self.comboBox.setObjectName("comboBox")
         self.pushButton = QtWidgets.QPushButton(Form)
-        self.pushButton.setGeometry(QtCore.QRect(300, 20, 80, 25))
+        self.pushButton.setGeometry(QtCore.QRect(330, 70, 41, 25))
         self.pushButton.setObjectName("pushButton")
+        self.comboBox = QtWidgets.QComboBox(Form)
+        self.comboBox.setGeometry(QtCore.QRect(20, 20, 261, 25))
+        self.comboBox.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.comboBox.setObjectName("comboBox")
+        self.comboBox.addItem("Борщ")
+        self.comboBox.addItem("Плов")
+        self.label = QtWidgets.QLabel(Form)
+        self.label.setGeometry(QtCore.QRect(30, 130, 54, 17))
+        self.label.setObjectName("label")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -30,6 +31,6 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.label.setText(_translate("Form", "TextLabel"))
         self.pushButton.setText(_translate("Form", "PushButton"))
+        self.label.setText(_translate("Form", "TextLabel"))
 
